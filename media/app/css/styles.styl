@@ -1,0 +1,412 @@
+@import "normalize.styl"
+@font-face
+  font-family: 'Geometria'
+  src: url('../Libs/fonts/Geometria.otf')
+@font-face
+  font-family 'Geometria-Light'
+  src url('../Libs/fonts/Geometria-Light.otf')
+@font-face
+  font-family 'Geometria-Bold'
+  src url('../Libs/fonts/Geometria-Bold.otf')
+body
+  font-family "Geometria"
+  height: 3000px //remove
+  *
+    outline 0
+.clearfix
+  &:after
+    content ''
+    display block
+    clear both
+.callback
+  font-weight: bold
+  display: block
+  background #ddd
+  width: 100%
+  height: 60px
+  line-height: 60px
+  color #58A2D3
+  span
+    transition 0.5s ease
+    display block
+    &:hover
+      animation: tawy 1s ease;
+      animation-iteration-count: 1;
+#top
+  padding 0
+  > .container
+    position relative
+  header
+    position absolute
+    top 0
+    left 0
+    background: #fff
+    text-align center
+    padding 0 !important
+    z-index 1
+
+    .logo
+      display block
+      width 100%
+      margin-top: 30px
+      height 51px
+      background url("../img/kazeco-logo.png") 50% 50% no-repeat
+      background-size contain
+    .navigation
+      padding: 0
+      font-size: 2.2rem
+      text-transform uppercase
+      letter-spacing -1.5px
+      position relative
+      margin 20px auto 30px
+      &:after
+        content ''
+        position absolute
+        display block
+        height: 2px
+        background #D1D1D1
+        width 75%
+        bottom -10px
+        left 12.5%
+      li
+        transition 0.4s ease-out
+        &:hover
+          transform: scale(1.1)
+        a
+          font-family Geometria
+          color #2C2C2C
+          line-height: 50px
+        .active
+          color #2980B9
+    .contacts
+      text-align center
+      > div
+        margin 15px auto
+      .phone
+        font-size: 2.5rem
+        span
+          position relative
+          &:before
+            content ''
+            display block
+            height: 32px
+            width: 32px
+            background url("../img/icons/phone.png") 50% 50% no-repeat
+            background-size contain
+            position absolute
+            left -25px
+            top 2px
+      .email
+        font-size: 1.7rem
+        span
+          position relative
+          &:before
+            content ''
+            display block
+            height: 15px
+            width: 19px
+            background url("../img/icons/mail.png") 50% 50% no-repeat
+            background-size contain
+            position absolute
+            left -25px
+            top 4px
+  #slider_top
+    .slick-slide
+      height: 580px
+    .slick_cont
+      background-size cover
+      background-position 50% 50%
+      background-repeat no-repeat
+      > div
+        margin-top 13%
+      h2
+        font-family Geometria-Bold
+        font-weight: 800
+        text-transform uppercase
+        font-size: 4rem
+        color #fff
+        margin 0
+      .goods_info
+        font-family Geometria-Light
+        font-weight: 200
+        text-transform uppercase
+        font-size: 2rem
+        color #fff
+      p
+        font-family Geometria
+        font-weight: 400
+        font-size: 2rem
+        color #fff
+
+    .slick-dots
+      position absolute
+      right 15%
+      bottom 10%
+      margin 0
+      padding 0
+      li
+        display inline-block
+        padding 0 5px
+        button
+          border-radius 50%
+          border 3px solid #fff
+          width: 20px
+          height: 20px
+          color transparent
+          background transparent
+          outline none
+          line-height 20px
+      .slick-active
+        button
+          background #fff
+          width: 25px
+          height: 25px
+          line-height 25px
+  #serach_form
+    position absolute
+    top 30px
+    right 15%
+    input
+      margin 0
+      padding 0
+      display block
+      float left
+      height: 30px
+      background transparent
+      border 1px solid #2C2C2C
+    .search_query
+      padding-left 15px
+      color #000
+      border-right 0
+      outline 0
+    .search_submit
+      border-left 0
+      width: 30px
+      background url("../img/icons/zalupa_bleat.png") 50% 50% no-repeat
+      background-size 65%
+      transition 0.5s ease
+      outline none
+      &:hover, &:active, &:focus
+        background-size 85%
+
+a.more
+  display: inline-block
+  border 2px solid #fff
+  color #fff
+  height 40px
+  line-height: 40px
+  transition 0.5s ease
+  &:hover, &:active, &:focus
+    background rgba(#fff, .3)
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+  span
+    padding 0 20px
+    font-family Geometria
+    font-weight: 400
+    font-size: 1.7rem
+
+#mid_cont_one
+  .left
+    padding 0
+    .cat_cont
+      text-align center
+      padding 0
+      a
+        &:hover, &:active, &:focus
+          text-decoration none
+        span
+          display block
+          transition 0.4s ease-out
+          &:hover, &:active, &:focus
+            transform: scale(1.1)
+      h3
+        display block
+        width 100%
+        height: 175px
+        line-height: 295px
+        color #2C2C2C
+        font-size: 20px
+        background #F3F3F3
+        position relative
+        margin 0
+        padding 0
+        overflow hidden
+        &:before
+          content ''
+          display block
+          position absolute
+          top 25%
+          right 25%
+          width: 50%
+          height: 50%
+          background-position 50% 50%
+          background-size 40%
+          background-repeat no-repeat
+        &:hover, &:active, &:focus
+          background #fff
+      .cat_num_1
+        &:before
+          background-image url("../img/icons/vodon.png")
+      .cat_num_2
+        &:before
+          background-image url("../img/icons/gorel.png")
+      .cat_num_3
+        &:before
+          background-image url("../img/icons/ten.png")
+          background-size: 30%
+      .cat_num_4
+        &:before
+          background-image url("../img/icons/o_kotl.png")
+      .cat_num_5
+        &:before
+          background-image url("../img/icons/dop.png")
+      .cat_num_6
+        &:before
+          background-image url("../img/icons/zap.png")
+      .cat_num_7
+        &:before
+          background-image url("../img/icons/tepl.png")
+      .cat_num_8
+        &:before
+          background-image url("../img/icons/prom.png")
+      .cat_num_9
+        &:before
+          background-image url("../img/icons/goods.png")
+          background-size: 30%
+      .cat_num_2, .cat_num_5, .cat_num_8
+        border-top 1px solid #d4d4d4
+        border-bottom 1px solid #d4d4d4
+      .cat_num_4, .cat_num_5, .cat_num_6
+        border-left 1px solid #d4d4d4
+        border-right 1px solid #d4d4d4
+.right
+    text-align  center
+    .more
+      height 30px
+      line-height: 25px
+      margin 20px auto
+      color #2980B9
+      border-color #2980B9
+      border-bottom-width 2px
+      &:hover, &:active, &:focus
+        background rgba(#2980B9, .3)
+    h2
+      font-size: 20px
+    p
+      font-size: 14px
+#middle_cont
+  h2
+    text-align center
+    font-size: 20px
+    color #2980B9
+    margin 30px auto
+    font-weight: bold
+  #middle_slider
+    text-align center
+    span
+      display block
+      width: 100%
+    .name
+      color #2980B9
+      margin 5px auto
+    .decr
+      font-weight: bold
+      font-size: 16px
+    .price
+      font-weight: bold
+      font-size: 18px
+    .slick-list
+      margin 0 -15px
+    .slick-slide
+      height: 425px
+      overflow hidden
+      background #fff
+      border 2px solid #eee
+      margin 0 15px
+      position relative
+      .hidden_hover
+        display none
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        background rgba(#2980B9, .75)
+        color #fff
+        h3
+          font-size: 16px
+          margin 10px auto 30px
+        table
+          width: 100%
+          margin-top 50px
+          td
+            height: 35px
+            line-height: 35px
+          td:first-child
+            text-align right
+            padding-right 15px
+          td:last-child
+            text-align left
+            padding-left 15px
+        .callback
+          position absolute
+          bottom 0
+          left 0
+          right 0
+          background transparent
+          &:hover
+            background
+          a
+            color #fff
+    .img_cont
+      background 50% 50% no-repeat
+      background-size contain
+      width: 70%
+      height: 275px
+      margin 15px auto 15px
+    .recommended
+      position relative
+      &:before
+        content 'KAZECO Рекомендует!'
+        display block
+        position absolute
+        padding-left 15px
+        top 43px
+        color #fff
+        line-height: 30px
+        left -45px
+        width 170px
+        font-size: 12px
+        letter-spacing: -0.5px
+        height: 30px
+        background #F04A41 url("../img/icons/klass.png") 5px 50% no-repeat
+        transform rotate(-45deg)
+    .slick-dots
+      margin: 30px auto
+      padding: 0
+      li
+        display inline-block
+        margin 0 2px
+        button
+          color transparent
+          border-radius 50%
+          border 4px solid #2980B9
+          width: 20px
+          height: 20px
+          line-height: 20px
+          background transparent
+          outline 0
+      .slick-active
+        transition 0.5s ease
+        outline 0
+        button
+          background #2980B9
+          height: 23px
+          width: 23px
+          line-height: 23px
+#bot_cont
+  h2
+    text-transform uppercase
+  h3
+    color #2980B9
