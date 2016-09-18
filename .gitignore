@@ -1,1 +1,32 @@
 # Created by .ignore support plugin (hsz.mobi)
+### OpenCart template
+.htaccess
+/config.php
+admin/config.php
+
+!index.html
+
+download/
+image/data/
+image/cache/
+system/cache/
+system/logs/
+
+system/storage/
+
+.gitignore
+.idea/copyright/
+.idea/kazeco.local.iml
+.idea/modules.xml
+.idea/workspace.xml
+system/cache_mfp/
+vqmod/logs/
+
+media/bower_components
+media/node_modules
+media/TEMPLATE
+media/bower.json
+media/debug.log
+media/gulpfile.js
+media/package.json
+
