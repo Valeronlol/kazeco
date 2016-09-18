@@ -205,7 +205,6 @@ textarea {
 }
 body {
   font-family: "Geometria";
-  height: 3000px;
 }
 body * {
   outline: 0;
@@ -213,6 +212,9 @@ body * {
 .clearfix:after {
   content: '';
   display: block;
+  clear: both;
+}
+.clear {
   clear: both;
 }
 .callback {
@@ -471,7 +473,6 @@ a.more span {
   background: #f3f3f3;
   position: relative;
   margin: 0;
-  padding: 0;
   overflow: hidden;
 }
 #mid_cont_one .left .cat_cont h3:before {
@@ -645,21 +646,20 @@ a.more span {
   content: 'KAZECO Рекомендует!';
   display: block;
   position: absolute;
-  padding-left: 15px;
   top: 43px;
   color: #fff;
   line-height: 30px;
   left: -45px;
+  padding-left: 18px;
   width: 170px;
   font-size: 12px;
   letter-spacing: -0.5px;
   height: 30px;
-  background: #f04a41 url("../img/icons/klass.png") 5px 50% no-repeat;
+  background: #f04a41 url("../img/icons/klass.png") 5px 35% no-repeat;
   transform: rotate(-45deg);
 }
 #middle_cont #middle_slider .slick-dots {
   margin: 30px auto;
-  padding: 0;
 }
 #middle_cont #middle_slider .slick-dots li {
   display: inline-block;
@@ -685,9 +685,137 @@ a.more span {
   width: 23px;
   line-height: 23px;
 }
-#bot_cont h2 {
-  text-transform: uppercase;
+#bot_cont {
+  padding: 0;
 }
-#bot_cont h3 {
+#bot_cont .top_cont .left {
+  padding: 0;
+}
+#bot_cont .top_cont .left .top_news {
+  height: 225px;
+  overflow: hidden;
+}
+#bot_cont .top_cont .left h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+#bot_cont .top_cont .left h3 {
   color: #2980b9;
+  letter-spacing: -0.5px;
+}
+#bot_cont .top_cont .right {
+  position: relative;
+}
+#bot_cont .top_cont .right h2 {
+  text-align: left;
+  color: #2980b9;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 0 30px;
+  line-height: 30px;
+}
+#bot_cont .top_cont .right a {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+#bot_cont .top_cont .right img {
+  width: 100%;
+  margin: 0 auto;
+}
+#bot_cont .top_cont .right .news_cont {
+  text-align: left;
+  background: #f3f3f3;
+  padding-bottom: 20px;
+}
+#bot_cont .top_cont .right .news_cont h3 {
+  text-align: left;
+  color: #2980b9;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+#bot_cont .top_cont .right .news_cont p {
+  font-size: 14px;
+  color: #373737;
+  font-weight: bold;
+}
+#bot_cont .bot_cont {
+  position: relative;
+}
+#bot_cont .bot_cont .all_subj {
+  position: absolute;
+  top: -5px;
+  right: 5%;
+}
+#bot_cont .bot_cont h2 {
+  margin: 0 0 30px;
+}
+#bot_cont .bot_cont h2 span {
+  color: #f04a41;
+}
+#bot_cont .bot_cont img {
+  width: 100%;
+}
+.all_subj {
+  display: inline-block;
+  height: 30px;
+  padding: 0 15px;
+  line-height: 30px;
+  color: #4c4c4c;
+  border: 1px solid #d4d4d4;
+  transition: 0.5s ease;
+}
+.all_subj:hover {
+  color: #4c4c4c;
+  background: rgba(76,76,76,0.3);
+  animation: swing 1s ease;
+  animation-iteration-count: 1;
+}
+footer {
+  border-top: 3px solid #eee;
+  margin-top: 30px;
+  height: 85px;
+  text-align: center;
+}
+footer span {
+  color: #262626;
+  font-size: 14px;
+}
+footer .logo {
+  background: url("../img/kazeco-logo.png") 50% 50% no-repeat;
+  background-size: 100%;
+  height: 85px;
+  width: 100%;
+}
+footer .f_top {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b0b0b0;
+  display: block;
+}
+footer .social {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: 50% 50% no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+footer .social:hover {
+  opacity: 1;
+}
+footer .youtube {
+  background-image: url("../img/icons/you.png");
+}
+footer .tweet {
+  background-image: url("../img/icons/twee.png");
+}
+footer .facebook {
+  background-image: url("../img/icons/fb.png");
 }

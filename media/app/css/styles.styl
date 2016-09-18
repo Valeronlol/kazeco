@@ -10,7 +10,6 @@
   src url('../Libs/fonts/Geometria-Bold.otf')
 body
   font-family "Geometria"
-  height: 3000px //remove
   *
     outline 0
 .clearfix
@@ -18,6 +17,8 @@ body
     content ''
     display block
     clear both
+.clear
+  clear both
 .callback
   font-weight: bold
   display: block
@@ -230,7 +231,6 @@ a.more
         background #F3F3F3
         position relative
         margin 0
-        padding 0
         overflow hidden
         &:before
           content ''
@@ -371,20 +371,19 @@ a.more
         content 'KAZECO Рекомендует!'
         display block
         position absolute
-        padding-left 15px
         top 43px
         color #fff
         line-height: 30px
         left -45px
+        padding-left: 18px
         width 170px
         font-size: 12px
         letter-spacing: -0.5px
         height: 30px
-        background #F04A41 url("../img/icons/klass.png") 5px 50% no-repeat
+        background #F04A41 url("../img/icons/klass.png") 5px 35% no-repeat
         transform rotate(-45deg)
     .slick-dots
       margin: 30px auto
-      padding: 0
       li
         display inline-block
         margin 0 2px
@@ -406,7 +405,109 @@ a.more
           width: 23px
           line-height: 23px
 #bot_cont
-  h2
-    text-transform uppercase
-  h3
-    color #2980B9
+  padding 0
+  .top_cont
+    .left
+      padding 0
+      .top_news
+        height 225px
+        overflow hidden
+      h2
+        text-transform uppercase
+        font-size: 20px
+        font-weight: bold
+        padding-left 15px
+      h3
+        color #2980B9
+        letter-spacing: -0.5px
+    .right
+      position relative
+      h2
+        text-align left
+        color #2980B9
+        font-size: 20px
+        text-transform uppercase
+        font-weight: bold
+        margin 0 0 30px
+        line-height: 30px
+      a
+        position absolute
+        top 0
+        right 15px
+      img
+        width 100%
+        margin 0 auto
+      .news_cont
+        text-align left
+        background #F3F3F3
+        padding-bottom 20px
+        h3
+          text-align left
+          color #2980B9
+          font-size: 20px
+          text-transform uppercase
+          margin 20px 0
+        p
+          font-size: 14px
+          color #373737
+          font-weight: bold
+  .bot_cont
+    position relative
+    .all_subj
+      position absolute
+      top -5px
+      right: 5%
+    h2
+      margin 0 0 30px
+      span
+        color #F04A41
+    img
+      width: 100%
+.all_subj
+  display inline-block
+  height 30px
+  padding 0 15px
+  line-height: 30px
+  color #4C4C4C
+  border 1px solid #d4d4d4
+  transition 0.5s ease
+  &:hover
+    color #4C4C4C
+    background rgba(#4C4C4C, 0.3)
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+footer
+  border-top 3px solid #eee
+  margin-top: 30px
+  height: 85px
+  text-align center
+  span
+    color #262626
+    font-size: 14px
+  .logo
+    background url("../img/kazeco-logo.png") 50% 50% no-repeat
+    background-size 100%
+    height: 85px
+    width: 100%
+  .f_top
+    margin-top: 20px
+    font-size: 12px
+    color: #b0b0b0
+    display block
+  .social
+    display inline-block
+    width: 24px
+    height: 24px
+    position relative
+    background 50% 50% no-repeat
+    background-size contain
+    opacity .5
+    transition .3s
+    &:hover
+      opacity 1
+  .youtube
+    background-image url("../img/icons/you.png")
+  .tweet
+    background-image url("../img/icons/twee.png")
+  .facebook
+    background-image url("../img/icons/fb.png")
