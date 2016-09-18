@@ -11,9 +11,7 @@ image/data/
 image/cache/
 system/cache/
 system/logs/
-
-system/stor
-
+system/storage
 .gitignore
 .idea/
 system/cache_mfp/
