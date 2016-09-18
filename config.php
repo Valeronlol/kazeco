@@ -22,8 +22,8 @@ define('DIR_UPLOAD', 'C:/OpenServer/domains/shop.local/system/storage/upload/');
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_DATABASE', 'sho1.local');
+define('DB_PASSWORD', '123');
+define('DB_DATABASE', 'shop.local');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
 
