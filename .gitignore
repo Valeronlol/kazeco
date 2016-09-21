@@ -3,9 +3,8 @@
 .htaccess
 /config.php
 admin/config.php
-
 !index.html
-
+vqmod/
 download/
 image/data/
 image/cache/
@@ -15,8 +14,6 @@ system/storage
 .gitignore
 .idea/
 system/cache_mfp/
-vqmod/logs/
-vqmod/vqcache/
 
 media/bower_components
 media/node_modules
