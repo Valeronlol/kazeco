@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-      <span class="f_top">2016</span>
+      <span class="f_top"><?php echo date('Y') ;?></span>
       <span>(с) Все права защищены</span>
     </div>
     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
