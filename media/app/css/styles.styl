@@ -1,4 +1,5 @@
 @import "normalize.styl"
+
 @font-face
   font-family: 'Geometria'
   src: url('../Libs/fonts/Geometria.otf')
@@ -55,7 +56,7 @@ body
       background-size contain
     .navigation
       padding: 0
-      font-size: 2.2rem
+      font-size: 1.5rem
       text-transform uppercase
       letter-spacing -1.5px
       position relative
@@ -84,7 +85,7 @@ body
       > div
         margin 15px auto
       .phone
-        font-size: 2.5rem
+        font-size: 1.9rem
         span
           position relative
           &:before
@@ -98,7 +99,7 @@ body
             left -25px
             top 2px
       .email
-        font-size: 1.7rem
+        font-size: 1.4rem
         span
           position relative
           &:before
@@ -134,7 +135,7 @@ body
         font-size: 2rem
         color #fff
       p
-        font-family Geometria
+        font-family Open Sans
         font-weight: 400
         font-size: 2rem
         color #fff
@@ -160,9 +161,6 @@ body
       .slick-active
         button
           background #fff
-          width: 25px
-          height: 25px
-          line-height 25px
   #serach_form
     position absolute
     top 30px
@@ -203,7 +201,7 @@ a.more
     animation-iteration-count: 1;
   span
     padding 0 20px
-    font-family Geometria
+    font-family Open Sans
     font-weight: 400
     font-size: 1.7rem
 
@@ -319,7 +317,7 @@ a.more
     .slick-list
       margin 0 -15px
     .slick-slide
-      height: 425px
+      height: 350px
       overflow hidden
       background #fff
       border 2px solid #eee
@@ -363,7 +361,7 @@ a.more
       background 50% 50% no-repeat
       background-size contain
       width: 70%
-      height: 275px
+      height: 220px
       margin 15px auto 15px
     .recommended
       position relative
@@ -401,9 +399,6 @@ a.more
         outline 0
         button
           background #2980B9
-          height: 23px
-          width: 23px
-          line-height: 23px
 #bot_cont
   padding 0
   .top_cont
@@ -447,10 +442,12 @@ a.more
           font-size: 20px
           text-transform uppercase
           margin 20px 0
+          padding 0 7px
         p
           font-size: 14px
           color #373737
           font-weight: bold
+          padding 0 7px
   .bot_cont
     position relative
     .all_subj
@@ -480,7 +477,8 @@ footer
   border-top 3px solid #eee
   margin-top: 30px
   height: 85px
-  text-align center
+  text-align left
+  font-family "Open Sans"
   span
     color #262626
     font-size: 14px
@@ -511,3 +509,103 @@ footer
     background-image url("../img/icons/twee.png")
   .facebook
     background-image url("../img/icons/fb.png")
+
+.nopadding
+  padding 0 !important
+
+.clouds
+  height: 225px
+  background url("../img/clouds.jpg") 50% 0 no-repeat
+  background-size cover
+  h2
+    font-size: 20px
+    color: #2c2c2c
+    margin-top: 100px
+#top
+  .non_main header
+    position static
+    width: 100%
+    margin-top: -225px
+  .art_heading
+    font-size: 20px
+    font-family: Geometria
+    margin 25px 0
+    color #4C4C4C
+    text-transform uppercase
+    font-weight: bold
+  .akc
+    background 50% 65% no-repeat
+    background-size cover
+    height: 380px
+    text-align center
+    margin-top: 5px
+    h2
+      font-family Geometria-Bold
+      font-weight: 800
+      text-transform uppercase
+      font-size: 4rem
+      color #fff
+      margin 25px auto 0
+    .goods_info
+      font-family Geometria-Light
+      font-weight: 200
+      text-transform uppercase
+      font-size: 2rem
+      color #fff
+    p
+      font-family Open Sans
+      font-weight: 400
+      font-size: 2rem
+      color #fff
+  .article
+    h3
+      color: #2980b9
+      font-family Geometria-Bold
+      font-size: 20px
+    p
+      font-size: 14px
+      color: #373737
+  .all_subj
+    display block
+    text-align center
+    width 120px
+    padding: 0
+    margin 20px auto
+#mid_cont_one
+  .left
+    .cat_cont
+      .cat_page_cont
+        background #F3F3F3
+        height: 450px
+        overflow-y auto
+        border 1px solid #ddd
+        &:hover
+          background #fff
+        h3
+          background-color: transparent
+          border 0
+        ul
+          margin: 0
+          padding: 0
+          li
+            margin 7px 0
+            a
+              text-align center
+              color: #2c2c2c
+              font-size: 16px
+              text-decoration none
+              transition .5s ease
+              display inline-block
+              &:hover, &:active, &:focus
+                transform: scale(1.1)
+          &:before
+            content ''
+            display block
+            width: 75%
+            margin-left 12.5%
+            height: 2px
+            background #ddd
+
+
+
+@import "responsive.styl"
