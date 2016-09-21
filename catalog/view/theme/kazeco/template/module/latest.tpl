@@ -1,3 +1,5 @@
+<?php
+/*
 <h3><?php echo $heading_title; ?></h3>
 <div class="row">
   <?php foreach ($products as $product) { ?>
@@ -40,3 +42,48 @@
   </div>
   <?php } ?>
 </div>
+*/
+?>
+<div id="middle_cont" class="container">
+  <div class="row">
+    <h2>Новые поступления</h2>
+    <div id="middle_slider">
+      <div>
+        <div class="img_cont recommended" style="background-image: url('media/app/img/good_1.jpg')"></div>
+        <span class="decr">Отопительный котел</span>
+        <span class="name">Navien Ace</span>
+        <span class="price">12 000 сом</span>
+        <div class="hidden_hover">
+          <h3>Отопительный котел <br>
+            Bitherm 10 кВт</h3>
+          <table >
+            <tbody>
+            <tr>
+              <td>Тип:</td>
+              <td>Угольный</td>
+            </tr>
+            <tr>
+              <td>Мощность:</td>
+              <td>10кВт</td>
+            </tr>
+            <tr>
+              <td>Установка:</td>
+              <td>Наполный</td>
+            </tr>
+            <tr>
+              <td>Назначение:</td>
+              <td>Отопление</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="callback"><a href="#"><span>Обратный звонок</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<pre>
+<?php
+print_r($products);
+?>
+</pre>
