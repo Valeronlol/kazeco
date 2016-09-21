@@ -605,7 +605,21 @@ footer
             margin-left 12.5%
             height: 2px
             background #ddd
-
-
+#burder
+  display: none
+  cursor pointer
+  width: 35px
+  height: 33px
+  margin 25px auto 0
+  transition .3s ease
+  border 1px solid transparent
+  &:hover
+    transform: scale(1.15)
+  > div
+    height: 1px;
+    width: 100%;
+    background: #333;
+    margin: 7px auto;
+    transition .3s ease
 
 @import "responsive.styl"

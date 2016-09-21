@@ -49,7 +49,15 @@ $( document ).ready(function() {
     });
     $('#middle_slider .slick-slide').on('mouseleave', function () {
         $(this).children('.hidden_hover').fadeOut(500);
-    })
+    });
 
+    $('#burder').on('click', function(){
+        var ul = $('#top .navigation');
+        if( ul.is(":hidden") ){
+            ul.slideDown( 600 );
+        }else{
+            ul.slideUp( 600 );
+        }
+    });
 
 });

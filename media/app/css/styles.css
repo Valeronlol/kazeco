@@ -927,6 +927,25 @@ footer .facebook {
   height: 2px;
   background: #ddd;
 }
+#burder {
+  display: none;
+  cursor: pointer;
+  width: 35px;
+  height: 33px;
+  margin: 25px auto 0;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+}
+#burder:hover {
+  transform: scale(1.15);
+}
+#burder > div {
+  height: 1px;
+  width: 100%;
+  background: #333;
+  margin: 7px auto;
+  transition: 0.3s ease;
+}
 @media (max-width: 1200px) {
   body,
   html {
@@ -944,6 +963,12 @@ footer .facebook {
   }
 }
 @media (max-width: 768px) {
+  #burder {
+    display: block;
+  }
+  #top header .navigation {
+    display: none;
+  }
   #top #serach_form {
     top: 0;
   }
