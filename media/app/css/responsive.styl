@@ -1,9 +1,3 @@
-//@media (max-width:1200px)
-//@media (max-width:992px)
-//@media (max-width:768px)
-//@media (max-width:480px)
-//@media (max-width:320px)
-
 @keyframes swing
 {
   15%
@@ -59,3 +53,44 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width:1200px)
+  body, html
+    overflow-x hidden
+  #bot_cont .bot_cont img
+    max-width 75%
+    display: block
+    margin 20px auto 0
+@media (max-width:992px)
+  .top_cont
+    margin: 0
+@media (max-width:768px)
+  #top #serach_form
+    top 0
+  #top #serach_form
+    right 5px
+  .top_cont
+    margin: 0
+  #bot_cont .bot_cont img, #bot_cont .top_cont .right img
+    max-width 90%
+  #mid_cont_one .left .cat_cont h3:before, #mid_cont_one .left .cat_cont .cat_num_3:before
+    background-size: 20%
+  #mid_cont_one .left .cat_cont .cat_num_9:before
+    background-size 12%
+  #mid_cont_one .left .cat_cont .cat_num_1:before
+    background-size 17%
+  #mid_cont_one .left .cat_cont .cat_num_3:before
+    background-size 11%
+  #top #slider_top .slick_cont > div
+    margin 200px auto 0
+    width: 90%
+    text-align right
+    padding: 0
+  #top header
+    position: static;
+    width: 100%;
+@media (max-width:480px)
+  #bot_cont .bot_cont h2 span
+    display: block
+
+//@media (max-width:320px)
