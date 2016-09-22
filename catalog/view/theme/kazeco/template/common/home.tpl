@@ -1,31 +1,8 @@
 <?php echo $header; ?>
 <div class="container-fluid" id="top">
-  <div class="container">
-    <div class="row">
-      <header class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-        <a href="#"><span class="logo"></span></a>
-        <div id="burder">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <ul class="navigation">
-          <li><a href="#" class="active">Главная</a></li>
-          <li><a href="#">Каталог продукции</a></li>
-          <li><a href="#">Новости статьи</a></li>
-          <li><a href="#">Наши проекты</a></li>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <div class="contacts">
-          <div class="phone"><span>+996 (312) 312 312</span></div>
-          <div class="email"><span>sales@kazeco.kg</span></div>
-        </div>
-        <div class="callback"><a href="#"><span>Обратный звонок</span></a></div>
-      </header>
-    </div>
-  </div>
-
+  <!-- Левая колонка -->
+  <?php echo $column_left; ?>
+  <!--Левая колонка -->
   <div id="slider_top">
     <div class="slick_cont" style="background-image: url('media/app//img/123.jpg')">
       <div class="col-sm-4 col-sm-offset-8 col-md-4 col-md-offset-8">
