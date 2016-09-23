@@ -5,7 +5,7 @@
       <?php foreach ($products as $product): ?>
 
       <div>
-        <div class="img_cont <?php if(true){ echo 'recommended'; }?>" style="background-image: url(' <?php echo $product['thumb'] ?> ')"></div>
+        <div class="img_cont <?php if($product['recommended']){ echo 'recommended'; }?>" style="background-image: url(' <?php echo $product['thumb'] ?> ')"></div>
         <span class="decr"><?php echo $product['name'] ?></span>
         <span class="name"><?php echo $product['description'] ?></span>
         <span class="price"><?php echo $product['price'] ?>сом</span>

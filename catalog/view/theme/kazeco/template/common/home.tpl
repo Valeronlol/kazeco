@@ -36,6 +36,7 @@
   </form>
 </div>
 
+<!--
 <div class="container" id="mid_cont_one">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 left">
@@ -62,6 +63,7 @@
     </div>
   </div>
 </div>
+-->
 
 <?= $content_top; ?>
 

@@ -120,13 +120,21 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-upc"><span data-toggle="tooltip" title="<?php echo $help_upc; ?>"><?php echo $entry_upc; ?></span></label>
                 <div class="col-sm-10">
-                  <input type="text" name="upc" value="<?php echo $upc; ?>" placeholder="<?php echo $entry_upc; ?>" id="input-upc" class="form-control" />
+                  <select name="upc" id="input-upc" class="form-control">
+                    <option value="">---</option>
+                    <?php foreach($lines as $line): ?>
+                    <option value="<?= $line['id']; ?>" <?= ($line['id'] == $upc) ? 'selected' : ''; ?> ><?= $line['code']; ?></option>
+                    <?php endforeach; ?>
+                  </select>
                 </div>
               </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-ean"><span data-toggle="tooltip" title="<?php echo $help_ean; ?>"><?php echo $entry_ean; ?></span></label>
                 <div class="col-sm-10">
-                  <input type="text" name="ean" value="<?php echo $ean; ?>" placeholder="<?php echo $entry_ean; ?>" id="input-ean" class="form-control" />
+                  <select name="ean" id="input-ean" class="form-control">
+                    <option value="0">---</option>
+                    <option value="1" <?= ($ean == 1) ? 'selected' : ''; ?> >Да</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group">
