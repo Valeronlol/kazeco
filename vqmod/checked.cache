@@ -273,3 +273,8 @@ catalog\language\russian\module\category.php
 catalog\view\theme\kazeco\template\module\category.tpl
 catalog\controller\module\banner.php
 catalog\view\theme\kazeco\template\module\banner.tpl
+catalog\controller\module\html.php
+catalog\view\theme\default\template\module\html.tpl
+catalog\view\theme\default\template\module\latest.tpl
+catalog\view\theme\kazeco\template\module\html.tpl
+catalog\view\theme\kazeco\template\product\category.tpl
