@@ -848,6 +848,7 @@ footer .facebook {
   height: 380px;
   text-align: center;
   margin-top: 5px;
+  border: 1px solid transparent;
 }
 #top .akc h2 {
   font-family: Geometria-Bold;
@@ -889,7 +890,7 @@ footer .facebook {
 #mid_cont_one .left .cat_cont .cat_page_cont {
   background: #f3f3f3;
   height: 450px;
-  overflow-y: auto;
+  overflow: hidden;
   border: 1px solid #ddd;
 }
 #mid_cont_one .left .cat_cont .cat_page_cont:hover {
@@ -961,8 +962,24 @@ footer .facebook {
   .top_cont {
     margin: 0;
   }
+  #top .non_main header {
+    float: none;
+    border: 1px solid transparent;
+  }
 }
 @media (max-width: 768px) {
+  #mid_cont_one .left .cat_cont .cat_page_cont {
+    height: auto;
+    padding-bottom: 15px;
+  }
+  #top .art_heading,
+  #top .article h3,
+  #top .article p {
+    padding: 15px;
+  }
+  #top .non_main header {
+    margin-top: 0;
+  }
   #burder {
     display: block;
   }
@@ -1007,6 +1024,10 @@ footer .facebook {
   }
 }
 @media (max-width: 480px) {
+  #top .akc {
+    width: 100%;
+    text-align: left;
+  }
   #bot_cont .bot_cont h2 span {
     display: block;
   }
