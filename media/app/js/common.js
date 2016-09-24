@@ -44,10 +44,10 @@ $( document ).ready(function() {
     });
 
     //middle slider hover effect
-    $('#middle_slider .slick-slide').on('mouseenter', function () {
+    $('#middle_slider .slick-slide, #mid_goods_page .goods_cont').on('mouseenter', function () {
         $(this).children('.hidden_hover').fadeIn(500);
     });
-    $('#middle_slider .slick-slide').on('mouseleave', function () {
+    $('#middle_slider .slick-slide, #mid_goods_page .goods_cont').on('mouseleave', function () {
         $(this).children('.hidden_hover').fadeOut(500);
     });
 
