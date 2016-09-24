@@ -60,4 +60,18 @@ $( document ).ready(function() {
         }
     });
 
+    //descr_buttons handler
+    $('#descr_buttons .button_to').on('click', function (e){
+        e.preventDefault();
+        var content = $('#description_container .' + $(this).attr('href'));
+        
+        
+
+        if ( content.is(':hidden') ){
+            $(this).addClass('active').siblings().removeClass('active');
+            content.siblings().css('display', 'none');
+            content.fadeIn( 400 );
+        }
+    });
+
 });
