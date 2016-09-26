@@ -1,0 +1,17 @@
+{
+  "name": "bower.json",
+  "authors": [
+    "Valery <green-travel.kg@mail.ru>"
+  ],
+  "description": "",
+  "main": "bover.json",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
