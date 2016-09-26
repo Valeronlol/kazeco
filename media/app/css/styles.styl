@@ -216,6 +216,7 @@ a.more
           text-decoration none
         span
           display block
+          max-height 100%
           transition 0.4s ease-out
           &:hover, &:active, &:focus
             transform: scale(1.1)
@@ -226,58 +227,15 @@ a.more
         line-height: 295px
         color #2C2C2C
         font-size: 20px
-        background #F3F3F3
         position relative
         margin 0
         overflow hidden
-        &:before
-          content ''
-          display block
-          position absolute
-          top 25%
-          right 25%
-          width: 50%
-          height: 50%
-          background-position 50% 50%
-          background-size 40%
-          background-repeat no-repeat
+        background #F3F3F3 50% 50% no-repeat
+        background-size 70px
+        border 1px solid #d4d4d4
         &:hover, &:active, &:focus
-          background #fff
-      .cat_num_1
-        &:before
-          background-image url("../img/icons/vodon.png")
-      .cat_num_2
-        &:before
-          background-image url("../img/icons/gorel.png")
-      .cat_num_3
-        &:before
-          background-image url("../img/icons/ten.png")
-          background-size: 30%
-      .cat_num_4
-        &:before
-          background-image url("../img/icons/o_kotl.png")
-      .cat_num_5
-        &:before
-          background-image url("../img/icons/dop.png")
-      .cat_num_6
-        &:before
-          background-image url("../img/icons/zap.png")
-      .cat_num_7
-        &:before
-          background-image url("../img/icons/tepl.png")
-      .cat_num_8
-        &:before
-          background-image url("../img/icons/prom.png")
-      .cat_num_9
-        &:before
-          background-image url("../img/icons/goods.png")
-          background-size: 30%
-      .cat_num_2, .cat_num_5, .cat_num_8
-        border-top 1px solid #d4d4d4
-        border-bottom 1px solid #d4d4d4
-      .cat_num_4, .cat_num_5, .cat_num_6
-        border-left 1px solid #d4d4d4
-        border-right 1px solid #d4d4d4
+          background-color  #fff
+          border 1px solid #fff
 .right
     text-align  center
     .more

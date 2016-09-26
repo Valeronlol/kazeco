@@ -35,7 +35,32 @@
   </form>
 </div>
 
-<?= $content_top; ?>
+<div class="container" id="mid_cont_one">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 left">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 cat_cont">
+        <?php for( $i=0 ; $i < 3; $i++):?>
+          <a href="<?php if(isset($categories[$i]['href'])) echo $categories[$i]['href']; ?>"><h3 style="background-image: url('<?php if(isset($categories[$i]['thumb'])) echo $categories[$i]['thumb']; ?>')"><span><?php if(isset($categories[$i]['name'])) echo $categories[$i]['name']; ?></span></h3></a>
+        <?php endfor; ?>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 cat_cont">
+        <?php for( $i=3 ; $i < 6; $i++):?>
+        <a href="<?php if(isset($categories[$i]['href'])) echo $categories[$i]['href']; ?>"><h3 style="background-image: url('<?php if(isset($categories[$i]['thumb'])) echo $categories[$i]['thumb']; ?>')"><span><?php if(isset($categories[$i]['name'])) echo $categories[$i]['name']; ?></span></h3></a>
+        <?php endfor; ?>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 cat_cont">
+        <?php for( $i = 6 ; $i < 9; $i++):?>
+        <a href="<?php if(isset($categories[$i]['href'])) echo $categories[$i]['href']; ?>"><h3 style="background-image: url('<?php if(isset($categories[$i]['thumb'])) echo $categories[$i]['thumb']; ?>')"><span><?php if(isset($categories[$i]['name'])) echo $categories[$i]['name']; ?></span></h3></a>
+        <?php endfor; ?>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 right">
+      <h2>О компании</h2>
+      <p>О компании Kazeco Complex Наша компания Kazeco Complex осуществляет поставку и обслуживание оборудования от мировых заводов производителей, в том числе и от ECOSTAR (Турция) и Oertli-Induflame (Швейцария). Мы занимаемся доставкой оборудования как в Кыргызстан, так и в Казахстан. Если у вас возникли какие либо вопросы, позвоните к нам в офисы в Бишкеке или Алматы. Специалисты нашей компании дадут бесплатные консультации и помогут вам сориентироваться  с выбором оборудования.</p>
+      <a href="#" class="more"><span>Подробнее</span></a>
+    </div>
+  </div>
+</div>
 
 <div class="container" id="bot_cont">
   <div class="row top_cont">
