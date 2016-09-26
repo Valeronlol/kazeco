@@ -1,0 +1,27 @@
+# Created by .ignore support plugin (hsz.mobi)
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store
+
+.htaccess
+
+!index.html
+
+download/
+image/data/
+image/cache/
+system/cache/
+system/logs/
