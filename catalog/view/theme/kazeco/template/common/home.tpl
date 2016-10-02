@@ -35,6 +35,7 @@
   </form>
 </div>
 
+
 <div class="container" id="mid_cont_one">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 left">
@@ -59,6 +60,22 @@
       <p>О компании Kazeco Complex Наша компания Kazeco Complex осуществляет поставку и обслуживание оборудования от мировых заводов производителей, в том числе и от ECOSTAR (Турция) и Oertli-Induflame (Швейцария). Мы занимаемся доставкой оборудования как в Кыргызстан, так и в Казахстан. Если у вас возникли какие либо вопросы, позвоните к нам в офисы в Бишкеке или Алматы. Специалисты нашей компании дадут бесплатные консультации и помогут вам сориентироваться  с выбором оборудования.</p>
       <a href="#" class="more"><span>Подробнее</span></a>
     </div>
+  </div>
+</div>
+
+<div id="partn_cont" class="container">
+  <h2>наши партнеры</h2>
+  <div class="col-md-12 col-sm-6 col-md-3 col-lg-3">
+    <a href="#"><img src="media/app/img/hyec (4).png" alt="asd"></a>
+  </div>
+  <div class="col-md-12 col-sm-6 col-md-3 col-lg-3">
+    <a href="#"><img src="media/app/img/hyec (1).png" alt="asd"></a>
+  </div>
+  <div class="col-md-12 col-sm-6 col-md-3 col-lg-3">
+    <a href="#"><img src="media/app/img/hyec (2).png" alt="asd"></a>
+  </div>
+  <div class="col-md-12 col-sm-6 col-md-3 col-lg-3">
+    <a href="#"><img src="media/app/img/hyec (3).png" alt="asd"></a>
   </div>
 </div>
 

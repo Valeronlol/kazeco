@@ -11,6 +11,63 @@ $( document ).ready(function() {
         autoplaySpeed: 2000
     });
 
+    //our_projects sliders
+
+    $('.art_slider, .news_slider').slick({
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        speed: 400,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    $('.proj_slider').slick({
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 400,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    //callback
+    $('.callback').on('click', function (e) {
+        e.preventDefault();
+        $('#callback_us').fadeIn( 600 );
+    });
+    $('#callback_close').on('click', function () {
+        $('#callback_us').fadeOut( 600 );
+    });
+
     $('#middle_slider').slick({
         dots: true,
         arrows: false,

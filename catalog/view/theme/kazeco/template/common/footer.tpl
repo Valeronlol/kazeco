@@ -1,4 +1,15 @@
 <footer class="container">
+  <div id="callback_us">
+    <div>
+      <div id="callback_close"></div>
+      <h3>Обратный звонок</h3>
+      <form method="post">
+        <input type="text" placeholder="Ваше имя" name="name" class="name" required>
+        <input type="text" placeholder="Номер телефона" name="phone" class="phone" required>
+        <input type="submit" value="Отправить" name="submit" class="submit">
+      </form>
+    </div>
+  </div>
   <div class="row">
     <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
       <div class="row">
